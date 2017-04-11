@@ -28,7 +28,7 @@ http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/cor
         </db:select>
         <json:object-to-json-transformer doc:name="Object to JSON"/>
         <set-property propertyName="Content-Type" value="#[application/json]" doc:name="contenttype"/>
-        <jms:outbound-endpoint queue="FLIGHTS" connector-ref="ActiveMQ" doc:name="JMS"/>
+        <jms:outbound-endpoint queue="FLIGHTS" connector-ref="Active_MQ" doc:name="JMS"/>
     </flow>
     <flow name="maven-projectFlow1">
         <jms:inbound-endpoint exchange-pattern="request-response" queue="FLIGHTS" connector-ref="Active_MQ" doc:name="JMS"/>
