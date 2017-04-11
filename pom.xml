@@ -145,16 +145,12 @@
     <artifactId>derby</artifactId>
     <version>${derby.version}</version>
 </dependency>
-<dependency>
-    <groupId>org.apache.derby</groupId>
-    <artifactId>derby</artifactId>
-    <version>10.13.1.1</version>
-</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.activemq/activemq-core -->
 <dependency>
 			<groupId>org.apache.activemq</groupId>
 			<artifactId>activemq-all</artifactId>
 			<version>5.14.4</version>
-			<scope>provided</scope>
 		</dependency>
 		
 		<dependency>
@@ -168,6 +164,10 @@
             <version>${mule.version}</version>
             <scope>provided</scope>
         </dependency>
+
+		
+
+
     </dependencies>
 
 	<repositories>
